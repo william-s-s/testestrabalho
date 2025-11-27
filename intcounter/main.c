@@ -7,8 +7,8 @@ int random_int(int max){
     return rand() % max;
 }
 
-int main(int i){
-    int result = random_int(i);    
-    printf("%d", result);
+int main(int argc, char *argv[]){
+    int result = random_int(atoi(argv[1]));
+    printf("%d\n", result);
     return 0;
 }
